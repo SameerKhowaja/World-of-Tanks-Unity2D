@@ -8,6 +8,7 @@ TagManager:
   - walls
   - bushes
   - stones
+  - EnemyBot
   layers:
   - Default
   - TransparentFX

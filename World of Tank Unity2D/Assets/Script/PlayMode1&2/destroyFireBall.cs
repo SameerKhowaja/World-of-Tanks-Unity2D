@@ -13,7 +13,7 @@ public class destroyFireBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "FireBall" || collision.collider.tag == "Player" || collision.collider.tag == "walls" || collision.collider.tag == "bushes" || collision.collider.tag == "stones")
+        if(collision.collider.tag == "FireBall" || collision.collider.tag == "Player" || collision.collider.tag == "EnemyBot" || collision.collider.tag == "walls" || collision.collider.tag == "bushes" || collision.collider.tag == "stones")
         {
             GameObject blastEffect = Instantiate(blastPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
