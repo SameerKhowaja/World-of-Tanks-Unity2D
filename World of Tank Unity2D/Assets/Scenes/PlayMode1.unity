@@ -260,7 +260,7 @@ MonoBehaviour:
   firePrefab: {fileID: 7191329789216833943, guid: d410f491a06e8bc41a68c3b3549aad96,
     type: 3}
   keycode: 32
-  fireForce: 7
+  fireForce: 6
 --- !u!114 &416982880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRB: {fileID: 416982881}
   keycode: 32
-  rotateSpeed: 100
+  rotateSpeed: 130
   moveSpeed: 2
 --- !u!50 &416982881
 Rigidbody2D:
@@ -479,6 +479,9 @@ GameObject:
   - component: {fileID: 564317678}
   - component: {fileID: 564317677}
   - component: {fileID: 564317676}
+  - component: {fileID: 564317675}
+  - component: {fileID: 564317681}
+  - component: {fileID: 564317680}
   - component: {fileID: 564317674}
   m_Layer: 0
   m_Name: Enemy_Bot
@@ -496,11 +499,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 564317673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e001eca8ac6cddb41aeaab59ac274593, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aa248f6746ad984ab718a659ad0e8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: 100
+  bot_MovementScript: {fileID: 564317675}
+  bot_RotateScript: {fileID: 564317681}
+  bot_ShootScript: {fileID: 564317680}
+--- !u!114 &564317675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564317673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a366b26d098c37b46a7db8b537fec050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  stoppingDistance: 3.5
+  retreatDistance: 3
+  AllowToShoot: 0
   Player: {fileID: 416982884}
   rb: {fileID: 564317676}
+  bot_RotateScript: {fileID: 564317681}
 --- !u!50 &564317676
 Rigidbody2D:
   serializedVersion: 4
@@ -603,14 +627,44 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564317673}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 1.5049, y: 0.04, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.969872, w: 0.24361505}
+  m_LocalPosition: {x: 3.55, y: 0.05, z: 0}
   m_LocalScale: {x: 0.6907299, y: 0.63538593, z: 1}
   m_Children:
   - {fileID: 1741501719}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 151.8}
+--- !u!114 &564317680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564317673}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ffb912647bae8c4199512cf78e4da0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1741501719}
+  firePrefab: {fileID: 2357574413270458364, guid: 337abb28a7cd169488edccca03dca0ea,
+    type: 3}
+  bot_RotateScript: {fileID: 564317681}
+  fireForce: 6
+--- !u!114 &564317681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564317673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4c9bd7d9c34534e8d7a46b2643e637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 170
 --- !u!1 &618218914
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741501718}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.97, y: 0.005, z: 0}
+  m_LocalPosition: {x: 1, y: 0.005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 564317679}

@@ -147,3 +147,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blastPrefab: {fileID: 988761091412745180, guid: e52b3c1042ede014980ac6cbb028f067,
     type: 3}
+  AfterBlastPrefab: {fileID: 2075075612082938693, guid: 025295618a61fd14c87ced54f4dcab82,
+    type: 3}

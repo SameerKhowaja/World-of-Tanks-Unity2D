@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: e7205c237a593d34bb4b5f63896936c1
+guid: 7bcc1bb00fd400c4e917dff48ba65cfd
 TextureImporter:
   fileIDToRecycleName:
-    21300000: stone_0
-    21300002: stone_1
-    21300004: stone_2
+    21300000: b3_0
+    21300002: b3_1
+    21300004: b3_2
+    21300006: b3_3
+    21300008: b3_4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -44,11 +46,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,61 +100,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stone_0
+      name: b3_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 916
-        width: 101
-        height: 96
+        x: 19
+        y: 298
+        width: 73
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e72faba1890e145bb5fac8158c1b33
+      spriteID: 84e47ac288a2fcd4c9e87eddf039c5a5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stone_1
+      name: b3_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 14
-        width: 116
-        height: 113
+        x: 84
+        y: 46
+        width: 78
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 259a3f961fa914e40900816870d4581a
+      spriteID: 98d73e0cf551d0644a6420da8a5ffa96
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stone_2
+      name: b3_2
       rect:
         serializedVersion: 2
-        x: 776
-        y: 650
-        width: 105
-        height: 115
+        x: 25
+        y: 22
+        width: 61
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da334406333894f4294dfdcd4a0b4f76
+      spriteID: c812acf375def5847a80ea0d125d851c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b3_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 86
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bdf8d1c21d050419d540a40f92826a
       vertices: []
       indices: 
       edges: []
@@ -160,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d2ea8959d989d044f931d918403417b4
+    spriteID: fd4d9c44dab8157478d533874651f8fa
     vertices: []
     indices: 
     edges: []

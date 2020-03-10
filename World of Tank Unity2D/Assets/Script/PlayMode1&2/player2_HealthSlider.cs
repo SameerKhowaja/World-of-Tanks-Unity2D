@@ -26,7 +26,7 @@ public class player2_HealthSlider : MonoBehaviour
             Destroy(blastEffect, 1f);
 
             gr_func.disableMovements();
-            string playerwin = "Player1 Won the Game...!";
+            string playerwin = "Player1";
             gr_func.PlayerWon(playerwin);
         }
     }
