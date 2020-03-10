@@ -26,7 +26,7 @@ public class GameResults : MonoBehaviour
 
     public void RestartBTN()
     {
-        SceneManager.LoadScene("PlayMode2");
+        SceneManager.LoadScene("PlayMode1");
     }
 
     public void MainMenuBTN()
