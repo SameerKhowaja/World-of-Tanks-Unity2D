@@ -19,13 +19,13 @@ public class MovePlusRotate : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody2D>();
     }
-
+    
     private void Update()
     {
         //Rotate
-        if(keyPressedCheck == false)
+        if (keyPressedCheck == false)
         {
-            if(rotateWhere == false)
+            if (rotateWhere == false)
             {
                 transform.Rotate(0f, 0f, rotateSpeed * Time.fixedDeltaTime);
             }
@@ -33,7 +33,7 @@ public class MovePlusRotate : MonoBehaviour
             {
                 transform.Rotate(0f, 0f, -rotateSpeed * Time.fixedDeltaTime);
             }
-            
+
         }
         //
 

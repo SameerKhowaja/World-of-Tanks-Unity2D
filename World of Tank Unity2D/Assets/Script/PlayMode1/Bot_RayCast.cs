@@ -20,7 +20,7 @@ public class Bot_RayCast : MonoBehaviour
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance);
         if (hitInfo.collider != null)
         {
-            if (hitInfo.collider.CompareTag("Player"))
+            if (hitInfo.collider.CompareTag("Player") || hitInfo.collider.CompareTag("shield"))
             {
                 Debug.DrawLine(transform.position, hitInfo.point, Color.red);
                 bot_MovementScript.enabled = true;

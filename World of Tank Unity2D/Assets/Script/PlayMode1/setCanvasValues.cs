@@ -10,7 +10,7 @@ public class setCanvasValues : MonoBehaviour
     public Slider Enemy_Health;
 
     public int MaxBulletLimit;
-    public int MaxHealth;
+    public int MaxHealth_Player;
     public int MaxHealth_Enemy;
     float timerate = 2f;
 
@@ -19,7 +19,7 @@ public class setCanvasValues : MonoBehaviour
         Player_FireLimit.maxValue = MaxBulletLimit;
         Player_FireLimit.value = Player_FireLimit.maxValue;
 
-        Player_Health.maxValue = MaxHealth;
+        Player_Health.maxValue = MaxHealth_Player;
         Player_Health.value = Player_Health.maxValue;
 
         Enemy_Health.maxValue = MaxHealth_Enemy;

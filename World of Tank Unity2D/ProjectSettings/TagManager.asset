@@ -9,6 +9,8 @@ TagManager:
   - bushes
   - stones
   - EnemyBot
+  - Powerup
+  - shield
   layers:
   - Default
   - TransparentFX
