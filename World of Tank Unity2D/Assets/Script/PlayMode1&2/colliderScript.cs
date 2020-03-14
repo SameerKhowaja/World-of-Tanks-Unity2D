@@ -10,8 +10,8 @@ public class colliderScript : MonoBehaviour
 
     private void Start()
     {
-        p1.transform.position = new Vector3(mcamera.ScreenToWorldPoint(new Vector3(75f, 0f, 0f)).x - 0.5f, 0f);
-        p2.transform.position = new Vector3(mcamera.ScreenToWorldPoint(new Vector3(Screen.width-15f, 0f, 0f)).x - 0.5f, 0f);
+        p1.transform.position = new Vector3(mcamera.ScreenToWorldPoint(new Vector3(125f, 0f, 0f)).x - 0.5f, 0f);
+        p2.transform.position = new Vector3(mcamera.ScreenToWorldPoint(new Vector3(Screen.width-55f, 0f, 0f)).x - 0.5f, 0f);
     }
 
     void Update()

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class powerUpScript : MonoBehaviour
 {
     public float powerTime = 0;
-    float initialSpeed;
+    float initialSpeed, initialSpeed1;
     float initialHealth;
 
     public Image img;
@@ -19,10 +19,12 @@ public class powerUpScript : MonoBehaviour
     public CapsuleCollider2D shieldCollider;
 
     public MovePlusRotate SpeedScript;
+    public speedFast_PowerUp speedFast;
 
     private void Start()
     {
-        initialSpeed = SpeedScript.moveSpeed;
+        initialSpeed = SpeedScript.moveSpeed;   //for PC
+        initialSpeed1 = speedFast.moveSpeed; //for mobile
     }
 
     private void Update()
@@ -37,6 +39,7 @@ public class powerUpScript : MonoBehaviour
             shieldImgRenderer.enabled = false;
             shieldCollider.enabled = false;
             SpeedScript.moveSpeed = initialSpeed;
+            speedFast.moveSpeed = initialSpeed1;
         }
 
         if (shieldCollider.enabled == true)
@@ -84,6 +87,7 @@ public class powerUpScript : MonoBehaviour
         powerTime = 7f;
         img.sprite = speed;
         SpeedScript.moveSpeed += 2;
+        speedFast.moveSpeed += 2;
     }
     
 }

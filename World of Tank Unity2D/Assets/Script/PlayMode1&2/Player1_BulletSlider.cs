@@ -26,6 +26,7 @@ public class Player1_BulletSlider : MonoBehaviour
         {
             bulletSlider.value -= 1;
         }
+            
 
     }
 
